@@ -1,0 +1,64 @@
+{
+  "package" : "ng-zorro-antd",
+  "components" : [ {
+    "name" : "range_picker",
+    "displayName" : "Range Picker",
+    "selector" : "nz-range-picker-wrapper",
+    "iconClass" : "",
+    "desc" : "Range picker supporting Ant design system"
+  }, {
+    "name" : "button",
+    "displayName" : "Button",
+    "selector" : "nz-button",
+    "iconClass" : "button",
+    "desc" : "Button based on Ant design system"
+  }, {
+    "name" : "transfer",
+    "displayName" : "Transfer",
+    "selector" : "nz-transfer",
+    "iconClass" : "chips",
+    "desc" : "transfer based on Ant design system"
+  }, {
+    "name" : "divider",
+    "displayName" : "Divider",
+    "selector" : "nz-divider",
+    "iconClass" : "design-dialog",
+    "desc" : "Divider based on Ant design system"
+  }, {
+    "name" : "tooltip",
+    "displayName" : "Tooltip",
+    "selector" : "nz-tooltip-wrapper",
+    "iconClass" : "tooltip",
+    "desc" : "tooltip based on Ant design system"
+  }, {
+    "name" : "color_picker",
+    "displayName" : "Color Picker",
+    "selector" : "nz-color-picker",
+    "iconClass" : "color",
+    "desc" : "Color control based on Material 3 design system"
+  }, {
+    "name" : "input_number",
+    "displayName" : "Input Number",
+    "selector" : "nz-input-number",
+    "iconClass" : "input",
+    "desc" : "Input control based on Material 3 design system"
+  }, {
+    "name" : "slider",
+    "displayName" : "Slider",
+    "selector" : "nz-slider",
+    "iconClass" : "slider",
+    "desc" : "Slider control based on Material 3 design system"
+  } ],
+  "directives" : {
+    "nz-range-picker" : {
+      "createWrapper" : true,
+      "inputs" : [ "nzRanges", "nzSeparator", "nzShowTime" ]
+    },
+    "[nz-tooltip]" : {
+      "selector" : "nz-tooltip",
+      "createWrapper" : false,
+      "inputs" : [ "nzTooltipTitle", "nzTooltipPlacement", "nzTooltipColor" ],
+      "template" : "<span nz-tooltip>Dummy text</span>"
+    }
+  }
+}
